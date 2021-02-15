@@ -19,8 +19,8 @@ const App: React.FC = () => {
             </li>
           </ul>
 
-          <button>Log in</button>
-          <button>Sign up</button>
+          <button className={styles.login}>Log in</button>
+          <button className={styles.signup}>Sign up</button>
         </nav>
       </header>
 

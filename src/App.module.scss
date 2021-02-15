@@ -21,10 +21,12 @@ li {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 15px 28px 15px 24px;
 
   nav {
     display: flex;
+    align-items: center;
 
     ul {
       display: flex;
@@ -46,7 +48,34 @@ header {
       }
     }
 
-    button:last-child {
+    button {
+      font-size: 16px;
+      font-weight: 700;
+      padding: 11px 12px;
+      border-radius: 24px;
+      border: none;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: filter 0.2s linear;
+
+      &:hover {
+        filter: brightness(90%);
+      }
+
+      &.login {
+        background: $red;
+        color: $white;
+      }
+
+      &.signup {
+        background: $gray-light;
+      }
+    }
+
+    button.signup {
       margin-left: 10px;
     }
   }
