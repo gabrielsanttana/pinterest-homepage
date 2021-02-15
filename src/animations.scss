@@ -1,0 +1,11 @@
+.animationBefore {
+  // transform: translateY(40px);
+  // opacity: 0;
+  // pointer-events: none;
+}
+
+.animationAfter {
+  transform: translateY(-40px);
+  opacity: 0;
+  pointer-events: none;
+}

@@ -1,4 +1,5 @@
 @import "./variables.scss";
+@import "./animations.scss";
 
 * {
   margin: 0;
@@ -107,6 +108,7 @@ header {
     .phrase {
       white-space: nowrap;
       color: red;
+      transition: $fade-duration;
     }
   }
 }
@@ -126,6 +128,7 @@ header {
       display: flex;
       flex-direction: column;
       align-items: center;
+      transition: $fade-duration;
 
       .item {
         width: 236px;
